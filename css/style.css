@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    /* MAX-WIDTH AYUDA AL RESPONSIVE DE LA PAGINA */
+    max-width: 100%;
+}
+
+/* INICIO HEADER */
+header{
+    width: 100%;
+    position: relative;
+    display: block;
+    background: url(../img/bg-header.png);
+    /* SIRVE PARA ACHICAR LA IMAGEN */
+    background-size: cover;
+    padding-bottom: 120px;
+}
+/* FIN HEADER */
+
+header #navbar{
+    /* DISPLAY: FLEX AYUDA A COLOCAR LAS COSAS AL LADO */
+    display: flex;
+    /* JUSTIFY CONTENT PARA MOVER EL EJE X */
+    justify-content: space-between;
+    /* ALIGN ITEMS PARA MOVER EL EJE Y */
+    align-items: center;
+    padding: 40px 0;
+}
+
+header #navbar #menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+header #navbar #menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+header #navbar #menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    /* FONT-SIZE ES PARA EL TAMAÑO DE LA FUENTE */
+    font-size: 24px ;
+    transition: .3s;
+}
+
+header #navbar #menu ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+header #info-header{
+    text-align: center;
+    margin-top: 150px;
+}
+
+header #info-header h1{
+color: #e8f000;
+font-size: 45px;
+margin: 0;
+}
+
+header #info-header p{
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+header #info-header button{
+    margin-top: 60px;
+    background: #e8f000;
+    font-size: 28px;
+    color: #999;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#planes{
+    width: 100%;
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#planes h2{
+    font-size: 32px;
+}
+
+#planes .row{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#planes .row .card-plan{
+    position: relative;
+}
+#planes .row .card-plan img{
+    transition: .3s;
+}
+#planes .row .card-plan img:hover{
+    border-radius: 50% ;
+}
+#planes .row .card-plan h3{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #e8f000;
+}
+#destinos{
+    width: 100%;
+    position: relative;
+    display: block;
+    background: url(../img/bg-destinos.png);
+    background-size: cover;
+    padding-top: 100px;
+}
+#destinos h2{
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #e8f000
+    
+}
+
+#destinos .row{
+    
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#destinos .row .viajes{
+    font-size: 30px;
+    
+    text-align: center;
+    color: #fff;
+   
+}
+
+#destinos .row .viajes2{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+   
+}
+
+#destinos .row .viajes img{
+   
+    width: 250px;
+    height: 250px;
+   
+}
+
+#destinos .row .viajes2 img{
+    width: 250px;
+    height: 250px;
+   
+}
+
+#destinos .row .viajes h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Source Code Pro', monospace;
+   
+}
+
+#destinos .row .viajes2 h3{
+   margin-top: 10px;
+   text-align: center; 
+   font-size: 35px;
+   font-family: 'Source Code Pro', monospace;
+   
+}
+
+
+
+#contacto{
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    display: block;
+}
